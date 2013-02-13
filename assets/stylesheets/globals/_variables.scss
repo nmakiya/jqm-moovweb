@@ -1,5 +1,55 @@
+// This is your library of variables that hold your color scheme and basic styles for your
+// fonts, borders, gradients and headers.
 
-// Vertical Rhythm
-$base-font-size: 13px;
-$base-line-height: 24px;
-@include establish-baseline();
+// colors
+$color1: #6A2F0D; // brown
+$color2: #6a1802; // maroon
+$color3: #FF8C2F; // orange
+$color4: white;
+$color5: #075899; // blue 
+$color6: #C7D7DB; // blue gray
+$color7: #606263; // darker gray
+$color8: #D74401; //header border color
+
+// background colors
+$background1: #FCF5AA;
+$background2: #f2f4f7;
+$background3: #e7ebf0;
+$background4: #fff;
+$background5: #C14102; // header background top
+$background6: #852201; //header background bottom
+
+// fonts
+$font_size: 13px;
+$line_height: 24px;
+$font_family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$text_color: #333;
+
+// header sizes
+$h1_size: $font_size + 9px;
+$h2_size: $font_size + 6px;
+$h3_size: $font_size + 3px;
+
+// borders
+$border1: 1px solid shade($color1, 60%);
+$border2: 1px solid #CDCDCD;
+$border3: 1px solid shade($color3, 50%);
+$border4: 1px solid $color8;
+
+// gradients
+$grad1: linear-gradient($color1 0, shade($color1, 40%) 100%);
+$grad3: linear-gradient($color3 0, shade($color3, 40%) 100%);
+$grad4: linear-gradient($background5 0, shade($background5, 20%) 100%); //header top
+$grad2: linear-gradient($background6 0, shade($background6, 20%) 100%); //header bottom
+
+// spacing
+$spacing: 10px;
+
+// border radius
+$border_radius: 5px;
+
+// text shadow
+$text_shadow: 0 -1px rgba(0,0,0,0.9);
+
+// Box Shadow
+$box_shadow: 0 1px 3px rgba(0,0,0,0.9), 0 -1px 2px rgba(250,250,250,0.8);

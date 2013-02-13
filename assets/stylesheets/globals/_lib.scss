@@ -1,0 +1,118 @@
+// This is your library of useful mixins and classes that you'll be using throughout your site.
+
+// gradients
+@mixin grad_base {
+  padding: $spacing;
+  font-weight: bold;
+  color: $color4;
+  text-shadow: $text_shadow;
+}
+
+@mixin grad1 {
+  @include grad_base;
+  @include background($grad4);
+  border-top: $border4;
+  padding: 0;
+}
+
+// buttons
+@mixin button_base {
+  display: block;
+  cursor: pointer;
+  width: auto;
+  margin: $spacing;
+  padding: $spacing;
+  line-height: 1.4;
+  font-family: $font_family;
+  font-size: $font_size;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: $border_radius;
+  @include transition(opacity, 0.2s, ease-out);
+  &:hover, &:active {
+    opacity: 0.9;
+    @include transition(opacity, 0.2s, ease-in);
+  }
+}
+
+@mixin btn1 {
+  @include button_base;
+  position: relative;
+  min-width: 120px;
+  min-height: 20px;
+  background-color: $background6;
+  border: $border1;
+  color: $color4;
+  @include box-shadow($box_shadow);
+  text-shadow: $text_shadow;
+  font-size: $h3_size;
+  font-weight: normal;
+  a {
+    display: block;
+    color: $color4 !important;
+    text-decoration: none !important;
+  }
+  input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+  }
+}
+
+@mixin btn2 {
+  @include btn1;
+  float: right;
+  min-width: 80px;
+  min-height: 20px;
+}
+
+.mw_btn1 {
+  @include btn1;
+}
+
+.mw_btn2 {
+  @include btn2;
+}
+
+// headings
+@mixin mw_h1 {
+  font-size: $h1_size;
+  color: $color4;
+  font-weight: normal;
+  text-shadow: $text_shadow;
+}
+.mw_h1 {
+  @include mw_h1;
+}
+
+// bars
+@mixin bar_inner_base {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: $spacing;
+  line-height: 1.4;
+  font-size: $h3_size;
+  font-weight: bold;
+}
+@mixin bar1 {
+  @include bar_inner_base;
+  @include background($grad2);
+  border-top: 1px solid $color2;
+  min-height: 40px;
+  padding: 0px;
+  color: $color4;
+  text-decoration: none;
+  a {
+    color: $color4;
+    padding: $spacing;
+  }
+}
+.mw_bar1 {
+  @include bar1;
+}
