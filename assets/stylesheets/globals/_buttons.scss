@@ -1,0 +1,242 @@
+$buttons-url: url("/_moovweb_local_assets_/images/buttons.png");
+
+$buttons-width: 213px;
+$buttons-height: 449px;
+
+$buttons-AddCartButton-x: 0px;
+$buttons-AddCartButton-y: 0px;
+$buttons-AddCartButton-width: 126px;
+$buttons-AddCartButton-height: 30px;
+
+$buttons-MultippleAddresses-x: 0px;
+$buttons-MultippleAddresses-y: -30px;
+$buttons-MultippleAddresses-width: 213px;
+$buttons-MultippleAddresses-height: 30px;
+
+$buttons-ProceedToCheckout-x: 0px;
+$buttons-ProceedToCheckout-y: -60px;
+$buttons-ProceedToCheckout-width: 140px;
+$buttons-ProceedToCheckout-height: 30px;
+
+$buttons-ProceedToPayment-x: 0px;
+$buttons-ProceedToPayment-y: -90px;
+$buttons-ProceedToPayment-width: 139px;
+$buttons-ProceedToPayment-height: 30px;
+
+$buttons-SaveReview-x: 0px;
+$buttons-SaveReview-y: -120px;
+$buttons-SaveReview-width: 126px;
+$buttons-SaveReview-height: 30px;
+
+$buttons-UpdateQuanity-x: 0px;
+$buttons-UpdateQuanity-y: -150px;
+$buttons-UpdateQuanity-width: 126px;
+$buttons-UpdateQuanity-height: 30px;
+
+$buttons-WriteReview-x: 0px;
+$buttons-WriteReview-y: -180px;
+$buttons-WriteReview-width: 126px;
+$buttons-WriteReview-height: 30px;
+
+$buttons-back-x: 0px;
+$buttons-back-y: -210px;
+$buttons-back-width: 43px;
+$buttons-back-height: 32px;
+
+$buttons-cart-x: 0px;
+$buttons-cart-y: -242px;
+$buttons-cart-width: 44px;
+$buttons-cart-height: 39px;
+
+$buttons-go_btn-x: 0px;
+$buttons-go_btn-y: -281px;
+$buttons-go_btn-width: 41px;
+$buttons-go_btn-height: 30px;
+
+$buttons-menu-on-x: 0px;
+$buttons-menu-on-y: -311px;
+$buttons-menu-on-width: 60px;
+$buttons-menu-on-height: 33px;
+
+$buttons-menu-x: 0px;
+$buttons-menu-y: -344px;
+$buttons-menu-width: 60px;
+$buttons-menu-height: 33px;
+
+$buttons-search-x: 0px;
+$buttons-search-y: -377px;
+$buttons-search-width: 40px;
+$buttons-search-height: 33px;
+
+$buttons-user-x: 0px;
+$buttons-user-y: -410px;
+$buttons-user-width: 44px;
+$buttons-user-height: 39px;
+
+@mixin buttons-AddCartButton() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px 0px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin buttons-MultippleAddresses() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -30px;
+  width: 213px;
+  height: 30px;
+}
+
+@mixin buttons-ProceedToCheckout() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -60px;
+  width: 140px;
+  height: 30px;
+}
+
+@mixin buttons-ProceedToPayment() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -90px;
+  width: 139px;
+  height: 30px;
+}
+
+@mixin buttons-SaveReview() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -120px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin buttons-UpdateQuanity() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -150px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin buttons-WriteReview() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -180px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin buttons-back() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -210px;
+  width: 43px;
+  height: 32px;
+}
+
+@mixin buttons-cart() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -242px;
+  width: 44px;
+  height: 39px;
+}
+
+@mixin buttons-go_btn() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -281px;
+  width: 41px;
+  height: 30px;
+}
+
+@mixin buttons-menu-on() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -311px;
+  width: 60px;
+  height: 33px;
+}
+
+@mixin buttons-menu() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -344px;
+  width: 60px;
+  height: 33px;
+}
+
+@mixin buttons-search() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -377px;
+  width: 40px;
+  height: 33px;
+}
+
+@mixin buttons-user() {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -410px;
+  width: 44px;
+  height: 39px;
+}
+
+.buttons-AddCartButton {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px 0px;
+  width: 126px;
+  height: 30px;
+}
+
+.buttons-MultippleAddresses {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -30px;
+  width: 213px;
+  height: 30px;
+}
+
+.buttons-ProceedToCheckout {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -60px;
+  width: 140px;
+  height: 30px;
+}
+
+.buttons-ProceedToPayment {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -90px;
+  width: 139px;
+  height: 30px;
+}
+
+.buttons-SaveReview {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -120px;
+  width: 126px;
+  height: 30px;
+}
+
+.buttons-UpdateQuanity {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -150px;
+  width: 126px;
+  height: 30px;
+}
+
+.buttons-WriteReview {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -180px;
+  width: 126px;
+  height: 30px;
+}
+
+.buttons-back {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -210px;
+  width: 43px;
+  height: 32px;
+}
+
+.buttons-cart {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -242px;
+  width: 44px;
+  height: 39px;
+}
+
+.buttons-go_btn {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -281px;
+  width: 41px;
+  height: 30px;
+}
+
+.buttons-menu-on {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -311px;
+  width: 60px;
+  height: 33px;
+}
+
+.buttons-menu {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -344px;
+  width: 60px;
+  height: 33px;
+}
+
+.buttons-search {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -377px;
+  width: 40px;
+  height: 33px;
+}
+
+.buttons-user {
+  background: url("/_moovweb_local_assets_/images/buttons.png") no-repeat 0px -410px;
+  width: 44px;
+  height: 39px;
+}
