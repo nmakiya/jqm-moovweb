@@ -1,3 +1,30 @@
-footer._footer {
-
+#Footer {
+  @include bar1;
+  width: auto;
+  padding: 14px 10px;
+  height: 72px;
+  font-weight: normal;
+  div {
+    text-align: center;
+    .mw_currency {
+      margin-bottom: 5px;
+    }
+    span {
+      color: #d3b4af;
+      font-size: 12px;
+    }
+    .mw_moovweb {
+      span {
+        margin-top: 12px;
+        margin-bottom: 5px;
+        display: block;
+        font-style: italic;
+        font-size: 11px;
+      }
+      div {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
 }
