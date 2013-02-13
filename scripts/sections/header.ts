@@ -40,5 +40,8 @@ $('./body') {
     $("./br") {
       remove()
     }
+
+    # Remove header links temporarily
+    remove("../div[@id='Menu']")
   }
 }
