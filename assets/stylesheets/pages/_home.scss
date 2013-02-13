@@ -1,5 +1,18 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-._home {
+.mw_home {
+    .Left{
+    display: none;
+  }
   
+  .Clear{
+    display: none;
+  }
+
+  .mw_banner {
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+      background: #C92500;
+  }
 }
