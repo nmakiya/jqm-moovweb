@@ -19,13 +19,41 @@ match($status) {
 
     match($path) {
       with(/^\/$|^\/\?/) {
-        log("--> Importing pages/home.ts in mappings.ts")
+        log("--> Importing pages home.ts in mappings.ts")
         @import pages/home.ts
       }
+      with(/brand/) {
+        log("--> Importing brands.ts in mappings.ts")
+        @import pages/brands.ts
+      }
+      with(/cart/) {
+        log("--> Importing cart.ts in mappings.ts")
+        @import pages/cart.ts
+      }
+      with(/checkout/) {
+        log("--> Importing checkout.ts in mappings.ts")
+        @import pages/checkout.ts
+      }
+      with(/sample-product/) {
+        log("--> Importing product.ts in mappings.ts")
+        @import pages/product.ts
+      }
+      with(/shop-/) {
+        log("--> Importing category.ts in mappings.ts")
+        @import pages/category.ts
+      }
+      with(/holiday-landing-page/) {
+        log("--> Importing landing.ts in mappings.ts")
+        @import pages/landing.ts
+      }
       else() {
+        $("//div[@id='ProductDetails']/ancestor::html") {
+          log("--> Importing product.ts - mapping on content")
+          @import pages/product.ts
+        }
         log("--> No page match in mappings.ts")
       }
-    }
+    }   
   }
 
   else() {
