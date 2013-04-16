@@ -22,3 +22,10 @@ jqm.content() {
 $("/html/body//*[not(@data-role)]") {
   attribute("data-role", "none")
 }
+
+# reload uranium widgets, the default one isn't working...
+$("/html/body") {
+  insert("script", "x$(document).on('DOMContentLoaded', 
+    function(){ Ur.setup(); });")
+  insert("script", "$(document).ajaxComplete(function(){ Ur.setup(); });")
+}
