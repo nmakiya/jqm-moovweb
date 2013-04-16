@@ -25,5 +25,7 @@ $("/html") {
   @import sections/footer.ts
 
   @import mappings.ts
+
+  @import jqm.ts
 }
 
