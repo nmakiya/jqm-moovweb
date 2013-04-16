@@ -29,3 +29,5 @@ $("/html/body") {
     function(){ Ur.setup(); });")
   insert("script", "$(document).ajaxComplete(function(){ Ur.setup(); });")
 }
+
+# attribute("data-ajax", "false")

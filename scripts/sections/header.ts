@@ -1,7 +1,6 @@
 $('./body') {
   $(".//div[@id='Header']") {
     attribute("data-ur-set", "toggler")
-    attribute("data-ajax", "false")
       # Move top menu into #Logo container
       $("./div[@id='Logo']") {
       move_here("../../../div[@id='TopMenu']", "bottom"){
@@ -17,7 +16,6 @@ $('./body') {
       inject_after(read("../sections/header.html"))
       $("..//div[@class='mw_menu_btn']") {
         attribute("data-ur-toggler-component", "button")
-        attribute("data-ajax", "false")
       }
 
       # Fill search template
@@ -51,7 +49,6 @@ $('./body') {
     move_here("../div[@id='Menu']", "bottom"){
       # Declare toggler content element which is enabled/diabled by toggler button
       attribute("data-ur-toggler-component", "content")
-      attribute("data-ajax", "false")
       # Move "Category List" element on bottom of #Menu element
       move_here("../../div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
     }
