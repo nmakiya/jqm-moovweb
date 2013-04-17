@@ -1,4 +1,7 @@
 $('./body') {
+  $(".//a") {
+    attribute("data-ajax", "false")
+  }
   $(".//div[@id='Header']") {
     # attribute("data-ur-set", "toggler")
       # Move top menu into #Logo container
@@ -50,6 +53,9 @@ $('./body') {
       move_here("//div[@id='Menu']", "bottom"){
         # Move "Category List" element on bottom of #Menu element
         move_here("//div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
+        $(".//a") {
+          attribute("data-ajax", "true")
+        }
       }
     }
   }
