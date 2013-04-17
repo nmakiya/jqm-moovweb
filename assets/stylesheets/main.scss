@@ -24,3 +24,8 @@
 @import "pages/_cart";
 @import "pages/_checkout";
 @import "pages/_holiday_landing.scss";
+
+[data-role='panel'] {
+  background-color: gray;
+  opacity: .8;
+}

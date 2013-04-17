@@ -54,3 +54,11 @@ $('./body') {
     }
   }
 }
+
+
+$(".//div[@id='Container']") {
+  insert_top("a", "Open Sesasme", href: "#panel1")
+  insert_top("div", data-role: "panel", id: "panel1", data-display: "overlay") {
+    insert_bottom("div", "Naseem is the best!")
+  }
+}
