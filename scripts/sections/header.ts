@@ -45,20 +45,24 @@ $('./body') {
       remove()
     }
 
-    $("//div[@class='mw_menu_container']") {
-      # Move menu items into #Header
-      move_here("//div[@id='Menu']", "bottom"){
-        # Move "Category List" element on bottom of #Menu element
-        move_here("//div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
-      }
-    }
+    # $("//div[@class='mw_menu_container']") {
+    #   # Move menu items into #Header
+    #   move_here("//div[@id='Menu']", "bottom"){
+    #     # Move "Category List" element on bottom of #Menu element
+    #     move_here("//div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
+    #   }
+    # }
   }
 }
 
 
 $(".//div[@id='Container']") {
-  insert_top("a", "Open Sesasme", href: "#panel1")
-  insert_top("div", data-role: "panel", id: "panel1", data-display: "overlay") {
-    insert_bottom("div", "Naseem is the best!")
+  # insert_top("a", "Open Sesasme", href: "#panel1")
+  insert_top("div", data-role: "panel", id: "panel1", data-display: "overlay", class: "mw_menu_container") {
+    # Move menu items into #Header
+    move_here("//div[@id='Menu']", "bottom"){
+      # Move "Category List" element on bottom of #Menu element
+      move_here("//div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
+    }
   }
 }

@@ -25,7 +25,14 @@
 @import "pages/_checkout";
 @import "pages/_holiday_landing.scss";
 
-[data-role='panel'] {
-  background-color: gray;
-  opacity: .8;
+.ui-input-search, div.ui-input-text { 
+  margin: 0;
+}
+
+#panel1 {
+  @include background($grad2);
+}
+
+.mw_menu_btn {
+  height: 13px !important;
 }
