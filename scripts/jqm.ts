@@ -1,6 +1,8 @@
 # remove all scripts lol
 # remove("//script[not(@data-mw_keep='true')]")
 
+
+
 jqm.init()
 
 $("/html/body") {
@@ -31,3 +33,10 @@ $("/html/body") {
 }
 
 # attribute("data-ajax", "false")
+
+# Move scripts to bottom of the body
+# because the HEAD doesn't get loaded everytime when using JQM
+# so if you want your scripts imported they need to be in the body
+$("/html//script") {
+  move_to("/html/body", "bottom")
+}
